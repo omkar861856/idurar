@@ -41,6 +41,8 @@ const People = lazy(() => import('@/pages/People'));
 const Company = lazy(() => import('@/pages/Company'));
 
 const About = lazy(() => import('@/pages/About'));
+const Register = lazy(() => import('@/pages/Register'));
+
 
 let routes = {
   expense: [],
@@ -48,6 +50,10 @@ let routes = {
     {
       path: '/login',
       element: <Navigate to="/" />,
+    },
+    {
+      path: '/register',
+      element: <Register />,
     },
     {
       path: '/verify/*',

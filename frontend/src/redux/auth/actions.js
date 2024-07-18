@@ -36,6 +36,7 @@ export const register =
     dispatch({
       type: actionTypes.REQUEST_LOADING,
     });
+    
     const data = await authService.register({ registerData });
 
     if (data.success === true) {
